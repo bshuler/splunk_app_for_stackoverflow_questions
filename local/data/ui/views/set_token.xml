@@ -1,0 +1,24 @@
+<dashboard script="set_token.js">
+  <row>
+    <panel>
+      <title>mytoken = $mytoken$</title>
+      <html>
+        <a id="mydivId">
+        <img src="/static/app/stackoverflow/set_token.jpg"/>
+        </a>
+      </html>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <search id="search1">
+          <query>| makeresults | eval my_value="$mytoken$"</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>

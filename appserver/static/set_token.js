@@ -8,7 +8,7 @@ require([
 
     // Respond to clicks
     my_div.on("click", function(e) {
-        var tokens = mvc.Components.get("default");
+        var tokens = mvc.Components.get("submitted");
         tokens.set("mytoken", "cheese");
     });
 

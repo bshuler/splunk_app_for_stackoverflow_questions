@@ -5,3 +5,10 @@ modtime = 1591896706.469606600
 [app/launcher]
 version = 8.0.4
 modtime = 1591896706.472606200
+
+[views/set_token]
+access = read : [ * ], write : [ user ]
+export = none
+owner = bshuler
+version = 8.0.4
+modtime = 1591899273.891072200
